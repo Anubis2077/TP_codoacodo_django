@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    background-color: #ff3cac;
+    background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 40%, #2b86c5 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #particles-js{
+    z-index: -15;
+    display: flex;
+    
+  }
+  /* --------------------- */
+  
+  /*  menu de navegacion   */
+  
+  /* --------------------- */
+  
+  .nav a .marca {
+    width: 240px;
+    height: 25px;
+    display: none;
+    z-index: 999;
+  }
+  
+  
+  .nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 25px 40px;
+  }
+  
+  .nav li,
+  .nav a {
+    display: inline-block;
+    margin: 2px 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: 0.5s ease;
+    letter-spacing: 2px
+
+  }
+
+  .nav li,
+  .nav a:hover{
+    text-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px #15f4ee,
+        0 0 100px #15f4ee, 0 0 120px #15f4ee, 0 0 140px #15f4ee, 0 0 160px #15f4ee;
+    }
+  
+  
+  
+  /* --------------------- */
+  
+  /*        header         */
+  
+  /* --------------------- */
+  
+  .contenedor_titulo {
+    display: inline-flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    ;
+  }
+  
+  .header .contenedor_titulo .texto_header {
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    font-size: 90px;
+    letter-spacing: 9px;
+    height: 100vh;
+  }
+  
+  .titulo {
+    text-align: center;
+  }
+  
+  .texto_header,
+  .x-hover {
+    display: inline-flex;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    font-size: 90px;
+    letter-spacing: 9px;
+    color: #fff;
+    animation: neon 1.5s ease-in-out infinite alternate;
+    flex-direction: row;
+  }
+  
+  .texto_header {
+    transition: 1.5s;
+  }
+  
+  .texto_header:hover {
+    text-shadow: 0px 0px 20px #ffffff, 0px 0px 20px #ffffff, 0px 0px 30px #ff00ff,
+      0px 0px 40px #ff00ff, 0px 0px 50px #ff00ff, 0px 0px 60px #ff00ff,
+      0px 0px 70px #ff00ff;
+  }
+  
+  .x-hover {
+    font-size: 130px;
+    animation: parpadeo 5s infinite;
+  }
+  
+  @keyframes parpadeo {
+    0% {
+      text-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px #15f4ee,
+        0 0 100px #15f4ee, 0 0 120px #15f4ee, 0 0 140px #15f4ee, 0 0 160px #15f4ee;
+    }
+  
+    50% {
+      text-shadow: none;
+    }
+  
+    100% {
+      text-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px #15f4ee,
+        0 0 100px #15f4ee, 0 0 120px #15f4ee, 0 0 140px #15f4ee, 0 0 160px #15f4ee;
+    }
+  }
+  
+  
+
+  
+  

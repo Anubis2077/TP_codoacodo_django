@@ -1,0 +1,56 @@
+{% load static %} {% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>codeXmarket</title>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos CSS -->
+
+    <link rel="stylesheet" href="{% static 'css/style23.css' %}" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <a href="#inicio"><img class="marca" src="" alt="" srcset="" /></a>
+      <ul id="menu" class="menu">
+        <li data-menuanchor="">
+          <a class="" href="{% url 'register' %}" class="btn-neon">Registrarse</a>
+        </li>
+
+        <li data-menuanchor="Registrarse">
+          <a class="" href="{% url 'login' %}" class="btn-neon">Ingresar</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="contenedor_titulo">
+        <h1 class="titulo">
+          <span class="texto_header">code</span>
+          <p class="x-hover">X</p>
+          <span class="texto_header">market</span>
+        </h1>
+      </div>
+      
+    
+    <script src="{% static 'js/main23.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="{% static 'css/estiloslogin.css' %}" />
+    <!-- sweet alert -->
+    <script src="{% static 'lib/sweetalert2-9.10.0/sweetalert2.all.min.js' %}"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+
+<body>
+        <div class="logo">
+            <span class="texto_header">code</span>
+            <p class="x-hover">X</p>
+            <span class="texto_header">market</span>
+        </div>
+        
+        <div class="contenedor_form">
+        <h2 class="text_inicio">Ingrese sus datos para iniciar sesión</h2>
+        <form class="formulario" action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            <input class="form-control" type="text" name="username" id="id_username" placeholder="Usuario" />
+            <input class="form-control" type="password" name="password" id="id_password" placeholder="Contraseña" />
+            <button class="ghost botoncito" type="submit">Enviar</button>
+        </form>
+        <a href="#">Registrarse</a>
+        <br>
+        <br>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+</body>
+</html>
